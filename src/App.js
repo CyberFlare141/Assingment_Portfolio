@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Profile from "./pages/Profile";
+import MyArticles from "./pages/MyArticles";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="content">
         <Routes>
           <Route path="/" element={<Profile />} />
+          <Route path="/articles" element={<MyArticles />} />
         </Routes>
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import profilePic from "../assets/profile.jpg"; 
+import profilePic from "../assets/profile.jpg"; // Import the local image
 
 function Profile() {
   return (
     <div className="profile-page">
       <h1>Profile</h1>
-     <img
+      <img
         src={profilePic}
         alt="Profile"
         className="profile-pic"

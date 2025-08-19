@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import profilePic from "../assets/profile.jpg"; 
+import profilePic from "../assets/profile.jpg"; // Import the local image
 
 function Sidebar() {
   const location = useLocation();
@@ -11,6 +11,8 @@ function Sidebar() {
       <button
         onClick={() => setCollapsed(!collapsed)}
         className="toggle-btn"
+        aria-label="Toggle sidebar"
+        title="Toggle sidebar"
       >
         {collapsed ? "➡" : "⬅"}
       </button>
@@ -22,7 +24,7 @@ function Sidebar() {
         src={profilePic}
         alt="Profile"
         className="profile-pic"
-        style={{ width: 220, height: 220, borderRadius: "50%" }}
+        style={{ width: 70, height: 70, borderRadius: "50%" }}
       />
             <p className="name">Masrafi Iqbal</p>
           </div>
@@ -32,6 +34,12 @@ function Sidebar() {
               className={location.pathname === "/" ? "active" : ""}
             >
               Profile
+            </Link>
+            <Link
+              to="/articles"
+              className={location.pathname === "/articles" ? "active" : ""}
+            >
+              My Articles
             </Link>
           </nav>
         </>
