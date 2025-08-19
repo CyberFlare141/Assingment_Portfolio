@@ -1,7 +1,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fafafa;
+  background: #000000;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  background: #f8c9aa; 
+  min-height: 100vh; 
 }
 
 .app {
@@ -11,9 +18,9 @@ body {
 
 .sidebar {
   width: 220px;
-  background: #f7f7f7;
+  background: #FFF9BD;
   padding: 16px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #FFF9BD;
   transition: width 0.2s ease;
   position: sticky;
   top: 0;
@@ -26,8 +33,8 @@ body {
 }
 
 .toggle-btn {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #bdcf21;
+  border: 1px solid #050504;
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
@@ -63,20 +70,14 @@ body {
 }
 
 .sidebar nav a.active {
-  background: #e0e0e0;
+  background: #08f3d3;
   font-weight: bold;
 }
 
-.content {
-  flex: 1;
-  padding: 24px;
-}
-
-/* Profile page */
 .profile-page {
   text-align: center;
-  background: #fff;
-  border: 1px solid #eee;
+  background: #f4d5c0;
+  border: 1px solid #000000;
   padding: 24px;
   border-radius: 12px;
   max-width: 640px;
@@ -92,4 +93,26 @@ body {
 .pagination-wrap {
   display: flex;
   justify-content: center;
+}
+
+.profile-page h1 {
+  color: blue;
+}
+
+.profile-page h2 {
+  color: green;
+}
+
+.profile-page p {
+  color: darkslategray;
+}
+
+.profile-pic {
+  border: 4px solid #007bff; 
+}
+
+
+
+.table tr:hover td {
+  background-color: #c6ee5a; 
 }
