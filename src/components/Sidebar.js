@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile.jpg"; // Import the local image
 
 function Sidebar() {
   const location = useLocation();
