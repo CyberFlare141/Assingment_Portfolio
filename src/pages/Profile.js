@@ -13,7 +13,7 @@ function Profile() {
       />
       <h2>Masrafi Iqbal</h2>
       <p>Email: masrafi@gmail.com</p>
-      <p>Institute:Ahsanullah University of science and technology</p>
+      <p>Institute: Ahsanullah University of science and technology</p>
       <p>Department: CSE </p>
       <p>Date Joined: January 15, 2024</p>
     </div>

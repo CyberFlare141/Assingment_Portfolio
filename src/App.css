@@ -7,8 +7,8 @@ body {
 .content {
   flex: 1;
   padding: 24px;
-  background: #f8c9aa; 
   min-height: 100vh; 
+    background: #f8c9aa;
 }
 
 .app {
@@ -116,3 +116,4 @@ body {
 .table tr:hover td {
   background-color: #c6ee5a; 
 }
+
