@@ -1,6 +1,7 @@
+
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import profilePic from "../assets/profile.jpg"; // Import the local image
+import profilePic from "../assets/profile.jpg"; 
 
 function Sidebar() {
   const location = useLocation();
@@ -21,18 +22,15 @@ function Sidebar() {
         <>
           <div className="profile">
             <img
-        src={profilePic}
-        alt="Profile"
-        className="profile-pic"
-        style={{ width: 70, height: 70, borderRadius: "50%" }}
-      />
+              src={profilePic}
+              alt="Profile"
+              className="profile-pic"
+              style={{ width: 70, height: 70, borderRadius: "50%" }}
+            />
             <p className="name">Masrafi Iqbal</p>
           </div>
           <nav>
-            <Link
-              to="/"
-              className={location.pathname === "/" ? "active" : ""}
-            >
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>
               Profile
             </Link>
             <Link
